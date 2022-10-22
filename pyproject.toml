@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "verser"
+version = "0.1.0"
+description = ""
+authors = ["Catherine Devlin <catherine.devlin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pony = "^0.7.16"
+beautifulsoup4 = "^4.11.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+jupyterlab = "^3.4.8"
+litecli = "^1.9.0"
+black = "^22.10.0"
+isort = "^5.10.1"
+vulture = "^2.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ingest-verses = "verser.ingest:ingest"
